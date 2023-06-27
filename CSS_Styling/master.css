@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.quiz-app {
+  margin: 20px auto;
+  width: 800px; /* change the width using keyframes */
+  background-color: #f8f8f8;
+  padding: 15px;
+}
+.quiz-app .quiz-info {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  justify-content: space-between;
+}
+.quiz-app .quiz-area {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 15px;
+}
+.quiz-app .quiz-area h2 {
+  margin: 0;
+}
+.quiz-app .answers-area {
+  background-color: #fff;
+  padding: 0 20px 20px;
+}
+.quiz-app .answers-area .answer {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+.quiz-app .answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+.quiz-app .answers-area .answer input[type="radio"]:checked + label {
+  color: #0075ff;
+}
+.quiz-app .answers-area .answer label {
+  cursor: pointer;
+  font-weight: bold;
+  color: #777;
+  font-size: 14px;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+.quiz-app .submit-answer {
+  background-color: #0075ff;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.quiz-app .submit-answer:focus {
+  outline: none;
+}
+.quiz-app .bullets {
+  border-top: 1px solid #dfdfdf;
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+}
+.quiz-app .bullets .spans {
+  flex: 1;
+  display: flex;
+}
+.quiz-app .bullets .spans span {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+.quiz-app .bullets .spans span.active {
+  background-color: #0075ff;
+  color: white;
+}
+.quiz-app .result span {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  padding: 20px;
+  background: white;
+  justify-content: center;
+}
