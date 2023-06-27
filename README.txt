@@ -20,3 +20,5 @@ Ideas
 - Choose the language from many JSON objects 
 - Choose 10 rendomly questions 
 - Randomize answers
+
+https://mohammed-alhady.github.io/quizgame/
